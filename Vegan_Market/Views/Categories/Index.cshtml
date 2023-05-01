@@ -1,0 +1,446 @@
+﻿@model IEnumerable<Vegan_Market.Models.Category>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Web_Layout.cshtml";
+}
+
+
+    <aside id="notifications">
+        <div class="notifications-container container">
+        </div>
+    </aside>
+    <div class="container">
+        <div data-depth="2" class="breadcrumb-bg center breadcrumb-full" style=" background-color:#f4f1eb;background-image: url(); min-height:65px; ">
+            <div class="container">
+                <nav data-depth="2" class="breadcrumb hidden-sm-down">
+                    <ol>
+                        <li>
+                            <a href="@Url.Action("HomePage","Home")"><span>Home</span></a>
+                        </li>
+                        <li>
+                           @ViewBag.catenames
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div id="left-column" class="sidebar col-xs-12 col-sm-12 col-md-4 col-lg-3">
+                <div class="block-categories block">
+                    <p class="title_block text-uppercase h6 hidden-sm-down"><a href="3-acne-blemishes.html">Acne Blemishes</a></p>
+                    <div class="block_content">
+                        <ul class="category-top-menu">
+                            <li>
+                                <ul class="category-sub-menu"><li data-depth="0"><a href="4-haircare.html">Haircare</a></li><li data-depth="0"><a href="5-makeup.html">Makeup</a></li></ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="search_filters_wrapper" class="hidden-sm-down">
+                    <div id="search_filter_controls" class="hidden-md-up">
+                        <span id="_mobile_search_filters_clear_all"></span>
+                        <button class="btn btn-secondary ok">
+                            <i class="material-icons rtl-no-flip">&#xE876;</i>
+                            OK
+                        </button>
+                    </div>
+                    <div id="search_filters">
+                        <p class="text-uppercase h6 hidden-sm-down">Filter By</p>
+                        <section class="facet clearfix">
+                            <p class="h6 facet-title hidden-sm-down">Categories</p>
+                            <div class="title hidden-md-up" data-target="#facet_65899" data-toggle="collapse">
+                                <p class="h6 facet-title">Categories</p>
+                                <span class="navbar-toggler collapse-icons">
+                                    <i class="material-icons add">&#xE313;</i>
+                                    <i class="material-icons remove">&#xE316;</i>
+                                </span>
+                            </div>
+                            <ul id="facet_65899" class="collapse">
+                                <li>
+                                    <label class="facet-label" for="facet_input_65899_0">
+                                        <span class="custom-checkbox">
+                                            <input id="facet_input_65899_0" data-search-url="https://demo74.leotheme.com/prestashop/vt_oworganic/en/3-acne-blemishes?q=Categories-Haircare" type="checkbox">
+                                            <span class="ps-shown-by-js"><i class="material-icons rtl-no-flip checkbox-checked">&#xE5CA;</i></span>
+                                        </span>
+                                        <a href="3-acne-blemishesa784.html?q=Categories-Haircare" class="_gray-darker search-link js-search-link" rel="nofollow">
+                                            Haircare
+                                            <span class="magnitude">(1)</span>
+                                        </a>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="facet-label" for="facet_input_65899_1">
+                                        <span class="custom-checkbox">
+                                            <input id="facet_input_65899_1" data-search-url="https://demo74.leotheme.com/prestashop/vt_oworganic/en/3-acne-blemishes?q=Categories-Makeup" type="checkbox">
+                                            <span class="ps-shown-by-js"><i class="material-icons rtl-no-flip checkbox-checked">&#xE5CA;</i></span>
+                                        </span>
+                                        <a href="3-acne-blemishesb92d.html?q=Categories-Makeup" class="_gray-darker search-link js-search-link" rel="nofollow">
+                                            Makeup
+                                            <span class="magnitude">(1)</span>
+                                        </a>
+                                    </label>
+                                </li>
+                            </ul>
+                        </section>
+
+
+
+                        <section class="facet clearfix">
+                            <p class="h6 facet-title hidden-sm-down">Availability</p>
+                            <div class="title hidden-md-up" data-target="#facet_18373" data-toggle="collapse">
+                                <p class="h6 facet-title">Availability</p>
+                                <span class="navbar-toggler collapse-icons">
+                                    <i class="material-icons add">&#xE313;</i>
+                                    <i class="material-icons remove">&#xE316;</i>
+                                </span>
+                            </div>
+                            <ul id="facet_18373" class="collapse">
+                                <li>
+                                    <label class="facet-label" for="facet_input_18373_0">
+                                        <span class="custom-checkbox">
+                                            <input id="facet_input_18373_0" data-search-url="https://demo74.leotheme.com/prestashop/vt_oworganic/en/3-acne-blemishes?q=Availability-Available" type="checkbox">
+                                            <span class="ps-shown-by-js"><i class="material-icons rtl-no-flip checkbox-checked">&#xE5CA;</i></span>
+                                        </span>
+                                        <a href="3-acne-blemishes87aa.html?q=Availability-Available" class="_gray-darker search-link js-search-link" rel="nofollow">
+                                            Available
+                                            <span class="magnitude">(2)</span>
+                                        </a>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="facet-label" for="facet_input_18373_1">
+                                        <span class="custom-checkbox">
+                                            <input id="facet_input_18373_1" data-search-url="https://demo74.leotheme.com/prestashop/vt_oworganic/en/3-acne-blemishes?q=Availability-In+stock" type="checkbox">
+                                            <span class="ps-shown-by-js"><i class="material-icons rtl-no-flip checkbox-checked">&#xE5CA;</i></span>
+                                        </span>
+                                        <a href="3-acne-blemishes7740.html?q=Availability-In+stock" class="_gray-darker search-link js-search-link" rel="nofollow">
+                                            In stock
+                                            <span class="magnitude">(2)</span>
+                                        </a>
+                                    </label>
+                                </li>
+                            </ul>
+                        </section>
+                        <section class="facet clearfix">
+                            <p class="h6 facet-title hidden-sm-down">Brand</p>
+                            <div class="title hidden-md-up" data-target="#facet_18679" data-toggle="collapse">
+                                <p class="h6 facet-title">Brand</p>
+                                <span class="navbar-toggler collapse-icons">
+                                    <i class="material-icons add">&#xE313;</i>
+                                    <i class="material-icons remove">&#xE316;</i>
+                                </span>
+                            </div>
+                            <ul id="facet_18679" class="collapse">
+                                <li>
+                                    <label class="facet-label" for="facet_input_18679_0">
+                                        <span class="custom-checkbox">
+                                            <input id="facet_input_18679_0" data-search-url="https://demo74.leotheme.com/prestashop/vt_oworganic/en/2-home?SubmitCurrency=1&amp;id_currency=1&amp;q=Brand-Graphic+Corner" type="checkbox">
+                                            <span class="ps-shown-by-js"><i class="material-icons rtl-no-flip checkbox-checked">&#xE5CA;</i></span>
+                                        </span>
+                                        <a href="2-home1aec.html?SubmitCurrency=1&amp;id_currency=1&amp;q=Brand-Graphic+Corner" class="_gray-darker search-link js-search-link" rel="nofollow">
+                                            Graphic Corner
+                                            <span class="magnitude">(9)</span>
+                                        </a>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="facet-label" for="facet_input_18679_1">
+                                        <span class="custom-checkbox">
+                                            <input id="facet_input_18679_1" data-search-url="https://demo74.leotheme.com/prestashop/vt_oworganic/en/2-home?SubmitCurrency=1&amp;id_currency=1&amp;q=Brand-Studio+Design" type="checkbox">
+                                            <span class="ps-shown-by-js"><i class="material-icons rtl-no-flip checkbox-checked">&#xE5CA;</i></span>
+                                        </span>
+                                        <a href="2-home80c5.html?SubmitCurrency=1&amp;id_currency=1&amp;q=Brand-Studio+Design" class="_gray-darker search-link js-search-link" rel="nofollow">
+                                            Studio Design
+                                            <span class="magnitude">(9)</span>
+                                        </a>
+                                    </label>
+                                </li>
+                            </ul>
+                        </section>
+                        <section class="facet clearfix">
+                            <p class="h6 facet-title hidden-sm-down">Price</p>
+                            <div class="title hidden-md-up" data-target="#facet_8343" data-toggle="collapse">
+                                <p class="h6 facet-title">Price</p>
+                                <span class="navbar-toggler collapse-icons">
+                                    <i class="material-icons add">&#xE313;</i>
+                                    <i class="material-icons remove">&#xE316;</i>
+                                </span>
+                            </div>
+                            <ul id="facet_8343" class="faceted-slider collapse" data-slider-min="19" data-slider-max="36" data-slider-id="8343" data-slider-values="null" data-slider-unit="$" data-slider-label="Price" data-slider-specifications="{&quot;symbol&quot;:[&quot;.&quot;,&quot;,&quot;,&quot;;&quot;,&quot;%&quot;,&quot;-&quot;,&quot;+&quot;,&quot;E&quot;,&quot;\u00d7&quot;,&quot;\u2030&quot;,&quot;\u221e&quot;,&quot;NaN&quot;],&quot;currencyCode&quot;:&quot;USD&quot;,&quot;currencySymbol&quot;:&quot;$&quot;,&quot;numberSymbols&quot;:[&quot;.&quot;,&quot;,&quot;,&quot;;&quot;,&quot;%&quot;,&quot;-&quot;,&quot;+&quot;,&quot;E&quot;,&quot;\u00d7&quot;,&quot;\u2030&quot;,&quot;\u221e&quot;,&quot;NaN&quot;],&quot;positivePattern&quot;:&quot;\u00a4#,##0.00&quot;,&quot;negativePattern&quot;:&quot;-\u00a4#,##0.00&quot;,&quot;maxFractionDigits&quot;:2,&quot;minFractionDigits&quot;:2,&quot;groupingUsed&quot;:true,&quot;primaryGroupSize&quot;:3,&quot;secondaryGroupSize&quot;:3}" data-slider-encoded-url="3-acne-blemishes.html">
+                                <li>
+                                    <p id="facet_label_8343">
+                                        $19.00 - $36.00
+                                    </p>
+                                    <div id="slider-range_8343"></div>
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <div id="content-wrapper" class="js-content-wrapper left-column col-xs-12 col-sm-12 col-md-8 col-lg-9">
+                <section id="main" class="category-1967383214">
+                    <div id="js-product-list-header">
+                        <div class="block-category card card-block">
+                            <h1 class="h1">Acne Blemishes</h1>
+                            <div class="block-category-inner">
+                                <div id="category-description" class="text-muted"><p>Discover our favorites fashionable discoveries, a selection of cool items to integrate in your wardrobe. Compose a unique style with personality which matches your own.</p></div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div id="subcategories" class="card card-block hidden-sm-down">
+                        <h2 class="subcategory-heading">Subcategories</h2>
+                        <ul class="subcategories-list">
+                            <li>
+                                <div class="subcategory-image">
+                                    <a href="4-haircare.html" title="Haircare" class="img">
+                                        <img class="img-fluid" src="../../../../demo74leotheme.b-cdn.net/prestashop/vt_oworganic/c/4-category_default/haircare.jpg" alt="Haircare" loading="lazy" width="350" height="300" />
+                                    </a>
+                                </div>
+                                <h5><a class="subcategory-name" href="4-haircare.html">Haircare</a></h5>
+                                <div class="cat_desc"><p>T-shirts, sweaters, hoodies and men's accessories. From basics to original creations, for every style.</p></div>
+                            </li>
+                            <li>
+                                <div class="subcategory-image">
+                                    <a href="5-makeup.html" title="Makeup" class="img">
+                                        <img class="img-fluid" src="../../../../demo74leotheme.b-cdn.net/prestashop/vt_oworganic/c/5-category_default/makeup.jpg" alt="Makeup" loading="lazy" width="350" height="300" />
+                                    </a>
+                                </div>
+                                <h5><a class="subcategory-name" href="5-makeup.html">Makeup</a></h5>
+                                <div class="cat_desc"><p>T-shirts, sweaters, hoodies and women's accessories. From basics to original creations, for every style.</p></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <section id="products">
+                        <div id="js-product-list-top" class="products-selection">
+                            <div class="row">
+                                <div class="col-md-6 col-lg-3 hidden-md-down total-products ">
+                                    <p>There are 2 products.</p>
+                                </div>
+                                <div class="col-md-6 col-lg-3" id="btn_view_product" data-mode="grid" data-col-xl="3" data-col-lg="3" data-col-md="2" data-col-sm="2" data-col-xs="1" data-col-sp="1">
+                                    <span class="grid-select grid-select-list view-list" data-col="list"></span>
+                                    <span class="grid-select grid-select-grid view-1" data-col="12"></span>
+                                    <span class="grid-select grid-select-grid view-2" data-col="6"></span>
+                                    <span class="grid-select grid-select-grid view-3 active" data-col="4"></span>
+                                    <span class="grid-select grid-select-grid view-4" data-col="3"></span>
+                                    <span class="grid-select grid-select-grid view-5" data-col="2-4"></span>
+                                </div>
+                                <div class="col-md-6 col-lg-6 grid-selecting">
+                                    <div class="row sort-by-row">
+                                        <span class="col-sm-3 col-md-3 hidden-md-down sort-by">Sort by:</span>
+                                        <div class="col-sm-9 col-xs-8 col-md-12 products-sort-order dropdown">
+                                            <button class="btn-unstyle select-title" rel="nofollow" data-toggle="dropdown" aria-label="Sort by selection" aria-haspopup="true" aria-expanded="false">
+                                                Relevance <i class="material-icons float-xs-right">&#xE5C5;</i>
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                <a rel="nofollow" href="3-acne-blemishese563.html?order=product.sales.desc" class="select-list js-search-link">
+                                                    Best sellers
+                                                </a>
+                                                <a rel="nofollow" href="3-acne-blemishesf917.html?order=product.position.asc" class="select-list current js-search-link">
+                                                    Relevance
+                                                </a>
+                                                <a rel="nofollow" href="3-acne-blemishesfe2d.html?order=product.name.asc" class="select-list js-search-link">
+                                                    Name, A to Z
+                                                </a>
+                                                <a rel="nofollow" href="3-acne-blemishes0279.html?order=product.name.desc" class="select-list js-search-link">
+                                                    Name, Z to A
+                                                </a>
+                                                <a rel="nofollow" href="3-acne-blemishes8eb3.html?order=product.price.asc" class="select-list js-search-link">
+                                                    Price, low to high
+                                                </a>
+                                                <a rel="nofollow" href="3-acne-blemishes04e6.html?order=product.price.desc" class="select-list js-search-link">
+                                                    Price, high to low
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-3 col-xs-4 hidden-md-up filter-button">
+                                            <button id="search_filter_toggler" class="btn btn-secondary js-search-toggler">
+                                                Filter
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 hidden-md-up text-sm-center text-xs-center showing">
+                                    Showing 1-2 of 2 item(s)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hidden-sm-down">
+                            <section id="js-active-search-filters" class="hide">
+                                <p class="h6 hidden-xs-up">Active filters</p>
+                            </section>
+                        </div>
+                        <div id="js-product-list">
+                            <div class="products">
+
+                                <div class="product_list grid plist-1 ">
+                                    <div class="row leo-product-ajax">
+                                        <div class="ajax_block_product col-sp-12 col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 first-in-line last-line first-item-of-tablet-line last-item-of-mobile-line">
+                                            <article class="product-miniature js-product-miniature" data-id-product="2" data-id-product-attribute="9">
+                                                <div class="thumbnail-container">
+                                                    <div class="product-image">
+                                                        <a href="makeup/2-9-brown-bear-printed-sweater.html#/1-size-s" class="thumbnail product-thumbnail">
+                                                            <img class="img-fluid" src="../../../../demo74leotheme.b-cdn.net/prestashop/vt_oworganic/78-home_default/brown-bear-printed-sweater.jpg" alt="" data-full-size-image-url="../../../../demo74leotheme.b-cdn.net/prestashop/vt_oworganic/78-large_default/brown-bear-printed-sweater.jpg">
+                                                        </a>
+                                                        <ul class="product-flags">
+                                                            <li class="product-flag discount">-20%</li>
+                                                            <li class="product-flag new">New</li>
+                                                        </ul>
+                                                        <div class="functional-buttons clearfix">
+                                                            <div class="quickview no-variants hidden-sm-down">
+                                                                <a href="#" class="quick-view" data-link-action="quickview" title="Quick view">
+                                                                    <span class="leo-quickview-bt-loading cssload-speeding-wheel"></span>
+                                                                    <span class="leo-quickview-bt-content">
+                                                                        <i class="material-icons search">&#xE8B6;</i>
+                                                                        <span>Quick view</span>
+                                                                    </span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="button-container cart">
+                                                                <form action="https://demo74.leotheme.com/prestashop/vt_oworganic/en/cart" method="post">
+                                                                    <input type="hidden" name="token" value="3cdd8c5ee88bd551a74c3683752bffb9">
+                                                                    <input type="hidden" value="1199" class="quantity_product quantity_product_2" name="quantity_product">
+                                                                    <input type="hidden" value="1" class="minimal_quantity minimal_quantity_2" name="minimal_quantity">
+                                                                    <input type="hidden" value="9" class="id_product_attribute id_product_attribute_2" name="id_product_attribute">
+                                                                    <input type="hidden" value="2" class="id_product" name="id_product">
+                                                                    <input type="hidden" name="id_customization" value="" class="product_customization_id">
+                                                                    <input type="hidden" class="input-group form-control qty qty_product qty_product_2" name="qty" value="1" data-min="1">
+                                                                    <button class="btn btn-product add-to-cart leo-bt-cart leo-bt-cart_2" data-button-action="add-to-cart" type="submit">
+                                                                        <span class="leo-loading cssload-speeding-wheel"></span>
+                                                                        <span class="leo-bt-cart-content">
+                                                                            <i class="icon-btn-product icon-cart material-icons shopping-cart">&#xE547;</i>
+                                                                            <span class="name-btn-product">Add to cart</span>
+                                                                        </span>
+                                                                    </button>
+                                                                </form>
+                                                            </div>
+                                                        </div><div class="buttons-top">
+                                                            <div class="wishlist">
+                                                                <a class="leo-wishlist-button btn-product btn-primary btn" href="javascript:void(0)" data-id-wishlist="" data-id-product="2" data-id-product-attribute="9" title="Add to Wishlist">
+                                                                    <span class="leo-wishlist-bt-loading cssload-speeding-wheel"></span>
+                                                                    <span class="leo-wishlist-bt-content">
+                                                                        <i class="icon-btn-product icon-wishlist material-icons">&#xE87D;</i>
+                                                                        <span class="name-btn-product hidden hide text-remove">Remove from Wishlist</span>
+                                                                        <span class="name-btn-product text-add">Add to Wishlist</span>
+                                                                    </span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="compare">
+                                                                <a class="leo-compare-button btn-primary btn-product btn" href="javascript:void(0)" data-id-product="2" title="Add to Compare">
+                                                                    <span class="leo-compare-bt-loading cssload-speeding-wheel"></span>
+                                                                    <span class="leo-compare-bt-content">
+                                                                        <i class="icon-btn-product icon-compare material-icons">&#xE915;</i>
+                                                                        <span class="name-btn-product">Add to Compare</span>
+                                                                    </span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-meta">
+                                                        <h3 class="h3 product-title"><a href="makeup/2-9-brown-bear-printed-sweater.html#/1-size-s">Hummingbird printed sweater</a></h3>
+                                                        <div class="product-price-and-shipping">
+                                                            <span class="regular-price" aria-label="Regular price">$35.90</span>
+                                                            <span class="discount-percentage discount-product">-20%</span>
+                                                            <span class="price" aria-label="Price">
+                                                                $28.72
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                        </div>
+                                        <div class="ajax_block_product col-sp-12 col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 last-line last-item-of-tablet-line last-item-of-mobile-line last-mobile-line">
+                                            <article class="product-miniature js-product-miniature" data-id-product="1" data-id-product-attribute="1">
+                                                <div class="thumbnail-container">
+                                                    <div class="product-image">
+                                                        <a href="haircare/1-1-hummingbird-printed-t-shirt.html#/1-size-s/8-color-white" class="thumbnail product-thumbnail">
+                                                            <img class="img-fluid" src="../../../../demo74leotheme.b-cdn.net/prestashop/vt_oworganic/35-home_default/hummingbird-printed-t-shirt.jpg" alt="" data-full-size-image-url="../../../../demo74leotheme.b-cdn.net/prestashop/vt_oworganic/35-large_default/hummingbird-printed-t-shirt.jpg">
+                                                        </a>
+                                                        <ul class="product-flags">
+                                                            <li class="product-flag discount">-20%</li>
+                                                            <li class="product-flag new">New</li>
+                                                        </ul>
+                                                        <div class="functional-buttons clearfix">
+                                                            <div class="quickview hidden-sm-down">
+                                                                <a href="#" class="quick-view" data-link-action="quickview" title="Quick view">
+                                                                    <span class="leo-quickview-bt-loading cssload-speeding-wheel"></span>
+                                                                    <span class="leo-quickview-bt-content">
+                                                                        <i class="material-icons search">&#xE8B6;</i>
+                                                                        <span>Quick view</span>
+                                                                    </span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="button-container cart">
+                                                                <form action="https://demo74.leotheme.com/prestashop/vt_oworganic/en/cart" method="post">
+                                                                    <input type="hidden" name="token" value="3cdd8c5ee88bd551a74c3683752bffb9">
+                                                                    <input type="hidden" value="289" class="quantity_product quantity_product_1" name="quantity_product">
+                                                                    <input type="hidden" value="1" class="minimal_quantity minimal_quantity_1" name="minimal_quantity">
+                                                                    <input type="hidden" value="1" class="id_product_attribute id_product_attribute_1" name="id_product_attribute">
+                                                                    <input type="hidden" value="1" class="id_product" name="id_product">
+                                                                    <input type="hidden" name="id_customization" value="" class="product_customization_id">
+                                                                    <input type="hidden" class="input-group form-control qty qty_product qty_product_1" name="qty" value="1" data-min="1">
+                                                                    <button class="btn btn-product add-to-cart leo-bt-cart leo-bt-cart_1" data-button-action="add-to-cart" type="submit">
+                                                                        <span class="leo-loading cssload-speeding-wheel"></span>
+                                                                        <span class="leo-bt-cart-content">
+                                                                            <i class="icon-btn-product icon-cart material-icons shopping-cart">&#xE547;</i>
+                                                                            <span class="name-btn-product">Add to cart</span>
+                                                                        </span>
+                                                                    </button>
+                                                                </form>
+                                                            </div>
+                                                        </div><div class="buttons-top">
+                                                            <div class="wishlist">
+                                                                <a class="leo-wishlist-button btn-product btn-primary btn" href="javascript:void(0)" data-id-wishlist="" data-id-product="1" data-id-product-attribute="1" title="Add to Wishlist">
+                                                                    <span class="leo-wishlist-bt-loading cssload-speeding-wheel"></span>
+                                                                    <span class="leo-wishlist-bt-content">
+                                                                        <i class="icon-btn-product icon-wishlist material-icons">&#xE87D;</i>
+                                                                        <span class="name-btn-product hidden hide text-remove">Remove from Wishlist</span>
+                                                                        <span class="name-btn-product text-add">Add to Wishlist</span>
+                                                                    </span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="compare">
+                                                                <a class="leo-compare-button btn-primary btn-product btn" href="javascript:void(0)" data-id-product="1" title="Add to Compare">
+                                                                    <span class="leo-compare-bt-loading cssload-speeding-wheel"></span>
+                                                                    <span class="leo-compare-bt-content">
+                                                                        <i class="icon-btn-product icon-compare material-icons">&#xE915;</i>
+                                                                        <span class="name-btn-product">Add to Compare</span>
+                                                                    </span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-meta">
+                                                        <h3 class="h3 product-title"><a href="haircare/1-1-hummingbird-printed-t-shirt.html#/1-size-s/8-color-white">Hummingbird printed t-shirt</a></h3>
+                                                        <div class="product-price-and-shipping">
+                                                            <span class="regular-price" aria-label="Regular price">$23.90</span>
+                                                            <span class="discount-percentage discount-product">-20%</span>
+                                                            <span class="price" aria-label="Price">
+                                                                $19.12
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <nav class="pagination" data-total="2">
+                                <div id="pagination_summary" class="col-md-4 done">
+                                    Showing 1-2 of 2 item(s)
+                                </div>
+                                <div class="col-md-6 offset-md-2 pr-0">
+                                </div>
+                            </nav>
+                        </div>
+                        <div id="js-product-list-bottom"></div>
+                    </section>
+                    <div id="js-product-list-footer">
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
